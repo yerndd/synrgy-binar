@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aquamarine;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+table {
+    border-collapse: collapse;
+}
+table td {
+    padding: 20px;
+}
+input {
+    width: 100%;
+}
+.mg-top-1 {
+    margin-top: 1rem;
+}
+.mg-top-2 {
+    margin-top: 2rem;
+}
+.mg-bottom-1 {
+    margin-bottom: 1rem;
+}
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row {
+    display: flex;
+}
+.row > .col {
+    width: 100%
+}
+.row > .col-1 {
+    width: 8.33%;
+}
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Typography */
+.text-align-justify {
+    text-align: justify;
+}
+.text-align-center {
+    text-align: center;
+}
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+}
+
+/* Styling */
+.bold-bigger {
+    font-size: 16px;
+    font-weight: bold;
+}
+ul {
+    list-style-type: square;
+}
+.border-right {
+    border-right: 1px solid black;
+}
+.bg-white {
+    background-color: white;
+}
+.bg-blue {
+    background-color: #1d6149;
+}
+.cl-blue {
+    color: #1d6149;
+}
+.cl-white {
+    color: white;
+}
+#name {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.progress {
+    border: 1px solid black;
+    display: flex;
+    text-align: center;
+}
+.progress > .fill {
+    background-color: aquamarine;
+}
+.progress.p60 > .fill {
+    width: 60%;
+}
+.progress.p60 > .not {
+    width: 40%;
+}
+.progress.p65 > .fill {
+    width: 65%;
+}
+.progress.p65 > .not {
+    width: 35%;
+}
+.progress.p80 > .fill {
+    width: 80%;
+}
+.progress.p80 > .not {
+    width: 20%;
+}
+.progress.p90 > .fill {
+    width: 90%;
+}
+.progress.p90 > .not {
+    width: 10%;
+}
+.progress.p100 > .fill {
+    width: 100%;
+}
+.progress.p100 > .not {
+    width: 0%;
+}

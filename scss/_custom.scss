@@ -1,0 +1,43 @@
+.text-vertical {
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+}
+
+#pas-foto {
+    width: 50%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 576px) {
+    #pas-foto {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #pas-foto {
+        width: 100%;
+    }
+}
+
+@each $color-name, $color-value in $theme-colors {
+    .text-#{$color-name} {
+        color: $color-value;
+    }
+}
+
+@for $i from 0 through 100 {
+}
+
+@each $size-name, $size-value in $grid-breakpoints {
+    @media screen and (min-width: $size-value) {
+        .text-vertical-#{$size-name} {
+            writing-mode: vertical-rl;
+            text-orientation: sideways-right;
+        }
+    }
+}
